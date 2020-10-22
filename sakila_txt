@@ -1,0 +1,22 @@
+Sakila Assessment:
+
+1) SELECT COUNT(actor_id) FROM actor;
+	=200
+2)SELECT * FROM actor WHERE first_name = 'John';
+	= Suvari
+3)SELECT * FROM actor WHERE last_name = 'Neeson';
+	=Christian and Jayne Neeson
+4)SELECT * FROM actor WHERE actor_id = /10;
+	(I think this is wrong)
+5)SELECT description FROM film WHERE film_id = '100';
+6)SELECT * FROM film WHERE rating = 'R';
+	=195 films
+7)SELECT * FROM film WHERE rating != 'R';
+	=805 films
+8)SELECT length, title FROM film ORDER BY length ASC LIMIT 10;
+9)	SELECT MAX(length) FROM film;
+	SELECT title FROM film WHERE length = '185';
+13) SELECT MAX(t2.actor_id)
+    -> FROM film_actor t1
+    -> JOIN film t2 ON t1.film_id=t2.film_id;
+19)
